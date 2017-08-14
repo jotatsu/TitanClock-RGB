@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/jotatsu/TitanClock-RGB/master/ClockMeasure.png)
+
 # Titan Clock RGB
 
 Base code and schemes for a very large RGB wall clock.
