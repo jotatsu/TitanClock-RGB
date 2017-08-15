@@ -1,6 +1,5 @@
 //RTC libraries 
-#include <Wire.h>
-#include <SoftwareSerial.h>
+#include <Wire.h> 
 #include <Adafruit_NeoPixel.h>
 #include "DS3231.h"
 //WS2812B libraries
@@ -26,9 +25,7 @@ Adafruit_NeoPixel blinks  = Adafruit_NeoPixel(NUMPIXELS3, PINBLINK, NEO_GRB + NE
 
 /**************RTC Definitions**************/
 RTClib rtc;
-
-/**************Bluetooth Definitions**************/
-SoftwareSerial BTserial(2, 3); // RX | TX
+ 
 
 
 /*******Control states for the clock********/
@@ -116,8 +113,7 @@ void setup() {
 
   pixels.begin(); // This initializes the NeoPixel library.
   blinks.begin(); // This initializes the NeoPixel library.
-  Serial.begin(9600);
-  BTserial.begin(9600);
+  Serial.begin(9600); 
   delay(1000); 
   Wire.begin(); 
 }
